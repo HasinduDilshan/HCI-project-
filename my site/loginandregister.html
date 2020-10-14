@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="icon" href="images/w.jpg">
+    <title>Sign up</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+    <style>
+    
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+body{
+  font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+	background-image:url(images/3.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    overflow-y: hidden;
+}
+a{
+  text-decoration:none;
+  color:#444444;
+}
+.login-reg-panel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align:center;
+    width:70%;
+	right:0;left:0;
+    margin:auto;
+    height:400px;
+    background-color: rgba(30,30,30, 0.9);
+}
+.white-panel{
+    background-color: rgba(255,255, 255, 1);
+    height:500px;
+    position:absolute;
+    top:-50px;
+    width:50%;
+    right:calc(50% - 50px);
+    transition:.3s ease-in-out;
+    z-index:0;
+}
+.login-reg-panel input[type="radio"]{
+    position:relative;
+    display:none;
+}
+.login-reg-panel{
+    color:#B8B8B8;
+}
+.login-reg-panel #label-login, 
+.login-reg-panel #label-register{
+    border:1px solid #9E9E9E;
+    padding:0 5px;
+    width:150px;
+    display:block;
+    text-align:center;
+    border-radius:3px;
+    cursor:pointer;
+}
+.login-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    left:0;
+    position:absolute;
+    text-align:left;
+}
+.register-info-box{
+    width:30%;
+    padding:0 50px;
+    top:20%;
+    right:0;
+    position:absolute;
+    text-align:left;
+    
+}
+.right-log{right:50px !important;}
+
+.login-show, 
+.register-show{
+    z-index: 1;
+    display:none;
+    opacity:0;
+    transition:0.3s ease-in-out;
+    color:black;
+    text-align:left;
+    padding:50px;
+}
+.show-log-panel{
+    display:block;
+    opacity:0.9;
+}
+.login-show input[type="text"], .login-show input[type="password"]{
+    width: 100%;
+    display: block;
+    margin:15px 0;
+    padding: 10px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+.login-show input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+.login-show a{
+    display:inline-block;
+    padding:10px 0;
+}
+
+.register-show input[type="text"], .register-show input[type="password"]{
+    width: 100%;
+    display: block;
+    margin:15px 0;
+    padding: 10px;
+    border: 1px solid #b5b5b5;
+    outline: none;
+}
+.register-show input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    background: #444444;
+    color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+}
+
+
+.credit {
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    color: #3B3B25;
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+a{
+  text-decoration:none;
+  color:red;
+}
+    
+	.logo{
+		width: 250px;
+		height: 130px;
+		position: absolute;
+		top: 0px;
+		left: 10px;
+		
+	}
+
+	.cart{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 120px;
+		top: 30px;
+	}
+    
+	.aaa{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 40px;
+		top: 30px;
+	}
+	
+    
+    </style>
+</head>
+<body>
+
+		 <a href="index.html">
+           <img src="images/logo1.png" class="logo">
+           </a>
+           <a href="shocart.html">
+           <img src="images/cart.png" class="cart">
+           </a>
+           <a href="loginandregister.html">
+           <img src="images/1.png" class="aaa">
+           </a>
+		   
+  	<div class="login-reg-panel">
+		<div class="login-info-box">
+			<h2>Have an account?</h2>
+		
+			<label id="label-register" for="log-reg-show">Login</label>
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+							
+		<div class="register-info-box">
+			<h2>Don't have an account?</h2>
+			
+			<label id="label-login" for="log-login-show">Register</label>
+			<input type="radio" name="active-log-panel" id="log-login-show">
+		</div>
+							
+		<div class="white-panel">
+			<div class="login-show">
+				<h2>LOGIN</h2>
+				<form action="/action_page.php">
+				<label for="usrname">Username</label>
+				<input type="text" id="usrname" name="usrname" required>
+                
+				<p>Password</p>
+                    <input type="password" id="password" name="password" required>
+                  
+					<input type="submit" name="submit" value="Login">
+               
+				<a href="reset pw.html">Forgot password?</a>
+				
+			</div>
+			<div class="register-show">
+				<h2>REGISTER</h2>
+				<label for="email">Email</label>
+				<input type="text" id="email" name="email" required>
+				
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required>
+				
+				<label for="password">Confirm Password</label>
+				<input type="password" id="password" name="confirm password" required>
+				
+				<input type="submit" name="submit" value="Register">
+			</div>
+			
+						
+			
+			
+			
+			
+			 </form>
+		</div>
+	</div>
+  <script>
+    $(document).ready(function(){
+    $('.login-info-box').fadeOut();
+    $('.login-show').addClass('show-log-panel');
+});
+
+
+$('.login-reg-panel input[type="radio"]').on('change', function() {
+    if($('#log-login-show').is(':checked')) {
+        $('.register-info-box').fadeOut(); 
+        $('.login-info-box').fadeIn();
+        
+        $('.white-panel').addClass('right-log');
+        $('.register-show').addClass('show-log-panel');
+        $('.login-show').removeClass('show-log-panel');
+        
+    }
+    else if($('#log-reg-show').is(':checked')) {
+        $('.register-info-box').fadeIn();
+        $('.login-info-box').fadeOut();
+        
+        $('.white-panel').removeClass('right-log');
+        
+        $('.login-show').addClass('show-log-panel');
+        $('.register-show').removeClass('show-log-panel');
+    }
+});
+
+
+
+    
+    
+</script>
+
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+
+
+</body>
+</html>
