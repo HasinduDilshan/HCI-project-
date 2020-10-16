@@ -1,0 +1,75 @@
+<div class="track">
+    <div class="contact-form-right"><br/><br/>
+                            <h1><br/><br/>Fill in the Below Details Accurately as one of our agents will reach you ASAP !</h1><br/>
+                            <h2><b>Provide Accurate Details for Customer Satisfaction</h2></b>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                <span><b>First Name: </b></span>
+                                                <strong><abbr title="required">*</abbr></strong>
+                                              </label>
+                                            <input size = "30" type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                                            <div class="help-block with-errors"></div><br/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="region">
+                                                <span><b>Region: </b></span>
+                                                <strong><abbr title="required">*</abbr></strong>
+                                              </label>
+                                            <input size = "30" type="text" placeholder="Your Region" id="region" class="form-control" name="name" required data-error="Please enter your Region">
+                                            <div class="help-block with-errors"></div><br/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="address">
+                                                <span><b>Home Address: </b></span>
+                                                <strong><abbr title="required">*</abbr></strong>
+                                              </label>
+                                            <input size = "30" type="text" class="form-control" id="address" name="name" placeholder="Your Address" required data-error="Please enter your Address">
+                                            <div class="help-block with-errors"></div><br/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="contact">
+                                                <span><b>Contact Number: </b></span>
+                                                <strong><abbr title="required">*</abbr></strong>
+                                              </label>
+                                            <input size = "30" type="text" class="form-control" id="contact" name="name" placeholder="Your Contact Number" required data-error="Please enter your Contact Number">
+                                            <div class="help-block with-errors"></div><br/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="category">
+                                                <span><b>Category: </b></span>
+                                                <strong><abbr title="required">*</abbr></strong>
+                                              </label>
+                                            <input size = "30" type="text" class="form-control" id="category" name="name" placeholder="Category Interested In?" required data-error="Please enter the Category?">
+                                            <div class="help-block with-errors"></div><br/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="items">
+                                                <span><b>Items Interested: </b></span>
+                                                <strong><abbr title="required">*</abbr></strong>
+                                              </label>
+                                            <input size = "30" type="text" class="form-control" id="items" name="name" placeholder="Items Interested" required data-error="Please enter the Items Interested?">
+                                            <div class="help-block with-errors"></div><br/>
+                                        </div><br/>
+                                    </div>
+                                        <div class="form-submit-button:hover">
+                                            <button class="btn hvr-hover" id="submit" type="submit"><b>Submit Details </b></button><br/>
+                                            <div id="msgSubmit" class="h2 text-center hidden"></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
